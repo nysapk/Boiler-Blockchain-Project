@@ -10,7 +10,7 @@ describe("ExpenseShare", function () {
 
     // deploy ReceiptToken for testing
     const ReceiptTokenFactory = await ethers.getContractFactory("ReceiptToken");
-    receiptToken = await ReceiptTokenFactory.deploy();
+    receiptToken = await ReceiptTokenFactory.deploy("ReceiptToken", "RCPT");
 
     // deploy ExpenseShare with no address (no receipt token initially)
     const ExpenseShareFactory = await ethers.getContractFactory("ExpenseShare");
