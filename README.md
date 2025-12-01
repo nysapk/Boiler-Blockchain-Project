@@ -6,4 +6,4 @@ We chose the Open Track and implemented a custom smart contract that enables col
 
 To run: npx hardhat run scripts/deploy.js --network sepolia
 
-To start frontend:npx http-server frontend
+To start frontend: npx http-server frontend
