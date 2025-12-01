@@ -6,7 +6,8 @@ dotenv.config();
 
 const config: HardhatUserConfig = {
   solidity: "0.8.28",
-  defaultNetwork: "sepolia",
+  // keep tests/local usage on the in-memory network by default
+  defaultNetwork: "hardhat",
   networks: {
     hardhat: {},
     sepolia: {
